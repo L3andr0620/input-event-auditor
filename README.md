@@ -1,11 +1,12 @@
-# Endpoint Input Monitor & Security Auditor
+# Asynchronous Input Event Auditor
 
 ## ⚠️ Educational & Ethical Disclaimer
-This repository is hosted strictly for educational purposes, defensive security research, 
-and authorized penetration testing audits. Unauthorized deployment against systems 
-without explicit, written consent is strictly prohibited and illegal.
+This repository is hosted strictly for educational purposes, defensive security research, and authorized administrative auditing. Unauthorized deployment against endpoints without explicit management consent is strictly prohibited.
 
 ## 🎯 Project Objective
-A diagnostic security tool developed to analyze how operating systems handle background 
-input hooks. This project demonstrates how endpoint detection and response (EDR) agents 
-monitor unauthorized keyboard hooking mechanisms to prevent credential theft.
+A lightweight Python utility designed to audit local input event handling using asynchronous listeners. This project demonstrates how operating system API hooks intercept user input, providing practical context for how Endpoint Detection and Response (EDR) telemetry monitors system-wide activity.
+
+## 🛠️ Technical Skills Highlighted
+* **Asynchronous Event Handling:** Implemented non-blocking background loops via `pynput.keyboard.Listener`.
+* **Exception & Edge-Case Handling:** Managed distinct data structures for standard alphanumeric input vs. special system control characters.
+* **Persistent I/O Operations:** Managed continuous data streams using standard file append (`a`) operations in Python.
